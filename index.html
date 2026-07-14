@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Video Local</title>
+    <style>
+        /* Estilos generales y fondo oscuro elegante */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121620;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+            color: #4a9eff;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        p.subtitle {
+            color: #8a99ad;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        /* Contenedor del reproductor */
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            background-color: #1a2232;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid #2c3a52;
+            box-sizing: border-box;
+        }
+
+        /* Estilo del elemento video nativo */
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            display: block;
+            background-color: #000000;
+            outline: none;
+        }
+
+        /* Nota informativa inferior */
+        .info-box {
+            margin-top: 25px;
+            background-color: rgba(74, 158, 255, 0.1);
+            border-left: 4px solid #4a9eff;
+            padding: 12px 20px;
+            border-radius: 4px;
+            max-width: 760px;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #d1dcfa;
+        }
+
+        .info-box code {
+            background-color: #2c3a52;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #ffb74d;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Reproductor de Video</h1>
+    <p class="subtitle">Visualizando contenido multimedia local</p>
+
+    <div class="video-container">
+        <video controls poster="" preload="metadata">
+            <source src="as.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de este video. Por favor, actualiza tu navegador.
+        </video>
+    </div>
+
+    <div class="info-box">
+        <strong>💡 Instrucciones importantes:</strong><br>
+        Para que el video se reproduzca correctamente, asegúrate de renombrar tu archivo de video como <code>mi-video.mp4</code> o edita la línea número 62 de este archivo HTML reemplazando ese texto con el nombre exacto de tu archivo (respetando mayúsculas, minúsculas y la extensión como .mp4, .mkv, etc.). Ambos archivos deben estar juntos dentro de la misma carpeta.
+    </div>
+
+</body>
+</html>
